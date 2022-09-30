@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head><!--nesse head se colocam as metatags para comportamento do site e interação-->
+    <meta charset="UTF-8">   
+    <title> Agritec</title>
+    <link rel="stylesheet"  href="css/estilo.css">
+    <link rel="stylesheet" href="css/form.css">
+       
+
+</head>
+
+<body>
+
+
+<div id="interface">
+    <header id="cabecalho">
+    <hgroup>
+    <h1> Agritec</h1>
+    <h2> A Tecnologia em Campo</h2>
+    </hgroup>
+
+    <!--<figure class="foto-legenda">-->
+    <img id="icone" src="fotos/contato.png">
+    <!--<figcaption> 
+        <h3>O melhor das lentes</h3>
+        <p> A serviço da humanidade.</p>
+    </figcaption>-->
+    <!--</figure>-->
+
+    <!--<p>Guglielmo <sup>Targino</sup></p> exemplo de como colocar um numero exponencial-->
+
+    <nav id="menu">
+
+       <h1> Menu Principal</h1>
+        <ul type="a" start="4">       <!-- nesta linha, oode ser tambeém ol, lista ordenada-->
+            <li> <a href="index2x.html">Home</a></li>
+           
+            
+            <li> <a href="login.html">Login</a></li>
+                <!-- <ol>
+                    <li>CDs</li> ==linha para ilistraçao de comando apenas
+                    <li>DVs</li> ===linha para iluistraçao de comando apenas
+                </ol>-->
+            <li> <a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <form method="get" id="ccontato" action="mailto:guglielmohenriquestargino@gmail.com" oninput="calc_tot();">
+<fieldset> 
+    <legend> Fale Conosco > Contato</legend>
+Ficamos felizes em atendê-lo. Mande o formulário abaixo preenchido que entraremos em contato.
+
+
+</fieldset>
+
+<fieldset id="usuario">
+    <legend>Identificação do Usuário</legend>
+    <p> <label for="cnome"> Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"/> </p>
+    
+    <p> E-mail:<input type="email" name="temail" id="cemail" size="20" maxlength="20" placeholder="Email"/> </p>
+
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="tsexo" id="tmasc" /> <label for="tmasc">-Masculino</label><br/>
+        <input type="radio" name="tsexo" id="tfem"/> <label for="tfem">-Feminino</label>
+       
+    
+    </fieldset>
+<p><input type="date"/> Data de Nascimento:</p>
+    
+</fieldset>
+
+<fieldset id="endusuario">
+    <legend>Endereço do Usuário</legend>
+    <p> Logradouro:  <input type="text" name="tlogra" id="clogra" size="30" placeholder="rua, end e trav."/> </p>
+    <p> Número: <input type="number" name="tname" id="cname" size="5" placeholder="num. end."/></p>
+    
+
+    <label for="test"> Estado: </label>
+    <input name="test" id="cest" size="20" maxlength="20" placeholder="Sua UF" list="tado"> 
+
+    <datalist id="tado">
+        <option value="Rio Janeiro"></option> <!-- tag value define o valor que será enviado para o banco de dados-->
+        <option value="Sao Paulo"></option>
+    </datalist>
+
+    
+    <p><label for="tcid"> Cidade: </label>
+         <select name="tcid" id="ccid">
+
+        
+        <optgroup label="Est.SaoPaulo"> <!-- optgroip serve para definir grupos de opcoes-->
+            <option value="spc">Sao Paulo</option>
+        </optgroup>
+
+        <optgroup label="Est.Paraiba">
+            <option value="cgc"> Campina Grande</option>
+        </optgroup>
+    </select></p>
+
+</fieldset>
+
+<fieldset id="mensagens">
+<legend>Mensagem do Usuário</legend>
+    <p> <label for="curg"> Grau de Urgência:</label>
+    min<input type="range" name="turg" id="curg" min="0" max="10" step="2">max
+    </p>
+   <p> <label for="cmensg"> Mensagem:</label>
+    <textarea name="tmsm" id="cmsm" cols="30" rows="10" placeholder="sua mensagem aqui"></textarea>
+</p>
+</fieldset>
+
+
+  
+<!--<input type="text" name="tbot" id="cbot" placeholder="enviar">======outro exemplo de criar um botao-->
+<input type="image" src="fotos/botao-enviar.png" name="tenviar" id="cenvi">
+
+
+</form>
+
+<footer id="rodape">
+    Copyright 2022 - by Agritec S/A <br/>
+    <a href="http://google.com.br" target=" blank"> Facebook/agritec</a> | <a href="http://google.com.br" target="_blank"> Twitter/agritec</a></p>
+    </footer>
+    </div>
+    </body>
+    </html>
